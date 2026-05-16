@@ -40,3 +40,7 @@ if user_input:
             st.session_state["messages"].append(AIMessage(content=ai_reply))
         except Exception as e:
             st.error(f"Error: {e}")
+st.caption(
+    "Educational AI project built using Groq API and Llama model. "
+    "Responses may contain inaccuracies."
+)
