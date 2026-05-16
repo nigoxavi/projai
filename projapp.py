@@ -13,7 +13,7 @@ llm = ChatGroq(
 )
 
 st.title("San Xavi GenAI")
-st.write("This is a beginner-level AI chatbot project developed for learning purposes. As the model is still under training, it may occasionally generate assumed or incorrect answers.")
+st.write("Educational AI project for Learning Purposes. Responses may contain inaccuracies.")
 
 # Store chat history
 if "messages" not in st.session_state:
@@ -40,7 +40,3 @@ if user_input:
             st.session_state["messages"].append(AIMessage(content=ai_reply))
         except Exception as e:
             st.error(f"Error: {e}")
-st.caption(
-    "Educational AI project built using Groq API and Llama model. "
-    "Responses may contain inaccuracies."
-)
