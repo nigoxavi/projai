@@ -13,7 +13,8 @@ llm = ChatGroq(
 )
 
 st.title("San Xavi GenAI")
-st.write("Educational AI project for Learning Purposes. Responses may contain inaccuracies.")
+st.write("It is an independent educational AI project "
+    "built using Groq API and open models for Learning Purposes. Responses may contain inaccuracies.")
 
 # Store chat history
 if "messages" not in st.session_state:
