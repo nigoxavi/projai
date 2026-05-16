@@ -13,7 +13,7 @@ llm = ChatGroq(
 )
 
 st.title("San Xavi GenAI")
-st.write("This is a small project for learning purpose only")
+st.write("This is a beginner-level AI chatbot project developed for learning purposes. As the model is still under training, it may occasionally generate assumed or incorrect answers.")
 
 # Store chat history
 if "messages" not in st.session_state:
