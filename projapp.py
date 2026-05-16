@@ -12,7 +12,7 @@ llm = ChatGroq(
     model="llama-3.3-70b-versatile"
 )
 
-st.title("Gen AI San Xavi")
+st.title("San Xavi GenAI")
 
 # Store chat history
 if "messages" not in st.session_state:
