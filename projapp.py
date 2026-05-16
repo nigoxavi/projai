@@ -12,7 +12,7 @@ llm = ChatGroq(
     model="llama-3.3-70b-versatile"
 )
 
-st.title("Gen AI by San Xavi")
+st.title("Gen AI San Xavi")
 
 # Store chat history
 if "messages" not in st.session_state:
@@ -26,7 +26,7 @@ for msg in st.session_state["messages"]:
         st.chat_message("assistant").write(msg.content)
 
 # User input
-user_input = st.chat_input("San Xavi asking ...")
+user_input = st.chat_input("Ask your question...")
 
 if user_input:
     st.chat_message("user").write(user_input)
